@@ -1,0 +1,302 @@
+/* Advanced Container Queries */
+@container (min-width: 400px) {
+  .card-wide {
+    grid-template-columns: 1fr 2fr;
+  }
+}
+
+@container (min-width: 600px) {
+  .card-wide {
+    grid-template-columns: 1fr 3fr;
+  }
+}
+
+/* Advanced Aspect Ratios */
+.aspect-ratio-16-9 {
+  aspect-ratio: 16 / 9;
+}
+
+.aspect-ratio-4-3 {
+  aspect-ratio: 4 / 3;
+}
+
+.aspect-ratio-1-1 {
+  aspect-ratio: 1 / 1;
+}
+
+.aspect-ratio-2-3 {
+  aspect-ratio: 2 / 3;
+}
+
+/* Advanced Object Fit */
+.object-cover {
+  object-fit: cover;
+}
+
+.object-contain {
+  object-fit: contain;
+}
+
+.object-fill {
+  object-fit: fill;
+}
+
+.object-scale-down {
+  object-fit: scale-down;
+}
+
+/* Advanced Visibility Control */
+.visible {
+  visibility: visible;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.collapse {
+  visibility: collapse;
+}
+
+/* Advanced Opacity */
+.opacity-0 { opacity: 0; }
+.opacity-25 { opacity: 0.25; }
+.opacity-50 { opacity: 0.5; }
+.opacity-75 { opacity: 0.75; }
+.opacity-100 { opacity: 1; }
+
+/* Advanced Pointer Events */
+.pointer-events-none {
+  pointer-events: none;
+}
+
+.pointer-events-auto {
+  pointer-events: auto;
+}
+
+/* Advanced User Select */
+.select-none {
+  user-select: none;
+}
+
+.select-text {
+  user-select: text;
+}
+
+.select-all {
+  user-select: all;
+}
+
+/* Advanced Overflow */
+.overflow-auto { overflow: auto; }
+.overflow-hidden { overflow: hidden; }
+.overflow-visible { overflow: visible; }
+.overflow-scroll { overflow: scroll; }
+.overflow-x-auto { overflow-x: auto; }
+.overflow-y-auto { overflow-y: auto; }
+.overflow-x-hidden { overflow-x: hidden; }
+.overflow-y-hidden { overflow-y: hidden; }
+
+/* Advanced Position */
+.sticky {
+  position: sticky;
+}
+
+.sticky-top {
+  position: sticky;
+  top: 0;
+}
+
+.sticky-bottom {
+  position: sticky;
+  bottom: 0;
+}
+
+/* Advanced Z-index */
+.z-0 { z-index: 0; }
+.z-10 { z-index: 10; }
+.z-20 { z-index: 20; }
+.z-30 { z-index: 30; }
+.z-40 { z-index: 40; }
+.z-50 { z-index: 50; }
+.z-auto { z-index: auto; }
+
+/* Advanced Filter Effects */
+.filter-none {
+  filter: none;
+}
+
+.filter-blur {
+  filter: blur(8px);
+}
+
+.filter-grayscale {
+  filter: grayscale(100%);
+}
+
+.filter-sepia {
+  filter: sepia(100%);
+}
+
+.backdrop-filter-none {
+  backdrop-filter: none;
+}
+
+.backdrop-filter-blur {
+  backdrop-filter: blur(8px);
+}
+
+/* Advanced Transform */
+.transform {
+  transform: translateX(0) translateY(0) rotate(0) skewX(0) skewY(0) scaleX(1) scaleY(1);
+}
+
+.transform-gpu {
+  transform: translate3d(0, 0, 0);
+}
+
+.rotate-0 { transform: rotate(0deg); }
+.rotate-90 { transform: rotate(90deg); }
+.rotate-180 { transform: rotate(180deg); }
+.rotate-270 { transform: rotate(270deg); }
+
+.scale-0 { transform: scale(0); }
+.scale-50 { transform: scale(0.5); }
+.scale-75 { transform: scale(0.75); }
+.scale-90 { transform: scale(0.9); }
+.scale-95 { transform: scale(0.95); }
+.scale-100 { transform: scale(1); }
+.scale-105 { transform: scale(1.05); }
+.scale-110 { transform: scale(1.1); }
+.scale-125 { transform: scale(1.25); }
+.scale-150 { transform: scale(1.5); }
+
+/* Advanced Transition Properties */
+.transition-none {
+  transition-property: none;
+}
+
+.transition-all {
+  transition-property: all;
+}
+
+.transition-colors {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+}
+
+.transition-opacity {
+  transition-property: opacity;
+}
+
+.transition-transform {
+  transition-property: transform;
+}
+
+.transition-shadow {
+  transition-property: box-shadow;
+}
+
+/* Advanced Animation Fill Mode */
+.animate-fill-none {
+  animation-fill-mode: none;
+}
+
+.animate-fill-forwards {
+  animation-fill-mode: forwards;
+}
+
+.animate-fill-backwards {
+  animation-fill-mode: backwards;
+}
+
+.animate-fill-both {
+  animation-fill-mode: both;
+}
+
+/* Advanced Will Change */
+.will-change-auto {
+  will-change: auto;
+}
+
+.will-change-scroll {
+  will-change: scroll-position;
+}
+
+.will-change-contents {
+  will-change: contents;
+}
+
+.will-change-transform {
+  will-change: transform;
+}
+
+/* Advanced Print Styles */
+@media print {
+  .print-hidden {
+    display: none !important;
+  }
+  
+  .print-visible {
+    display: block !important;
+  }
+  
+  .print-black-white {
+    filter: grayscale(100%);
+  }
+  
+  .break-before {
+    page-break-before: always;
+  }
+  
+  .break-after {
+    page-break-after: always;
+  }
+  
+  .break-inside-avoid {
+    page-break-inside: avoid;
+  }
+}
+
+/* Advanced Reduced Data Mode */
+@media (prefers-reduced-data: reduce) {
+  .background-image {
+    display: none;
+  }
+  
+  .video-autoplay {
+    display: none;
+  }
+}
+
+/* Advanced Interaction Media Features */
+@media (pointer: coarse) {
+  .touch-optimized {
+    min-height: 44px;
+    min-width: 44px;
+  }
+}
+
+@media (hover: hover) {
+  .hover-effects {
+    transition: all var(--transition-base);
+  }
+}
+
+@media (hover: none) {
+  .hover-effects {
+    transition: none;
+  }
+}
+
+/* Advanced Scripting Media Feature */
+@media (scripting: none) {
+  .no-script-fallback {
+    display: block;
+  }
+}
+
+@media (scripting: enabled) {
+  .no-script-fallback {
+    display: none;
+  }
+}
