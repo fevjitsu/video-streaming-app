@@ -5,15 +5,14 @@ import { getStorage } from 'firebase/storage';
 import { getAnalytics } from 'firebase/analytics';
 
 const firebaseConfig = {
-  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
-  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
-  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
-  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
-  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
-  appId: import.meta.env.VITE_FIREBASE_APP_ID,
-  measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID
+  apiKey: "AIzaSyANyxIoJ8wSa9MXCBCHvLvLAgbTuggabeA",
+  authDomain: "video-streamer-68dca.firebaseapp.com",
+  projectId: "video-streamer-68dca",
+  storageBucket: "video-streamer-68dca.firebasestorage.app",
+  messagingSenderId: "941147798723",
+  appId: "1:941147798723:web:dabee00fe9914f5e6b7676",
+  measurementId: "G-N0TSV7M9LW"
 };
-
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 

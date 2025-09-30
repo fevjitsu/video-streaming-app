@@ -1,11 +1,11 @@
-import React, { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Play, Info, Volume2, VolumeX, Maximize, Settings } from 'lucide-react';
 import { useAuth } from '../contexts/AuthContext';
-import SearchBar from '../components/SearchBar';
 import MovieCarousel from '../components/MovieCarousel';
+import Navbar from '../components/Navbar';
 import ProfileSwitcher from '../components/ProfileSwitcher';
-import { getFeaturedContent, getMoviesByGenre, searchMovies } from '../services/tmdbAPI';
+import { getFeaturedContent, getMoviesByGenre } from '../services/tmdbAPI';
 import '../styles/home.css';
 
 const Home = () => {
