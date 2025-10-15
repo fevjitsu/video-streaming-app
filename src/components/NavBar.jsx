@@ -105,7 +105,7 @@ const Navbar = () => {
           {/* Left Section - Logo and Navigation */}
           <div className="navbar-left">
             <a href="/" className="navbar-logo">
-              <span className="logo-text">NETFLIX</span>
+              <span className="logo-text">TTFLIX</span>
             </a>
             
             <div className="navbar-links">
