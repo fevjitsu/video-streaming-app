@@ -119,7 +119,7 @@ const Home = () => {
         <Navbar />
         <div className="loading-container">
           <div className="loading-spinner"></div>
-          <p>Loading amazing content...</p>
+          <p>Loading amazing stuff..</p>
         </div>
       </div>
     );
