@@ -257,10 +257,10 @@ const Home = () => {
             />
           )}
           
-          {/* Popular on Netflix */}
+          {/* Popular on Weflix */}
           {moviesByGenre.drama && (
             <MovieCarousel
-              title="Popular on Netflix"
+              title="Popular on Weflix"
               movies={moviesByGenre.drama.slice(0, 10)}
               genre="drama"
             />
@@ -357,7 +357,7 @@ const Home = () => {
           </div>
           
           <div className="footer-bottom">
-            <p>&copy; 2024 Netflix Clone. For educational purposes.</p>
+            <p>&copy; 2024 Weflix. For educational purposes.</p>
           </div>
         </div>
       </footer>
